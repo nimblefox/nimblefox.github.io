@@ -26,49 +26,36 @@ titles:
 key: page-about
 ---
 
-![TeXt Theme](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-home.jpg)
+Hello, welcome to my website!
 
-TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc. Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
+My name is Farooq, I am a Master's student at The University of Texas at Dallas.
 
-```javascript
-(() => console.log('Hello, World!'))();
-```
+I love solving problems involved in Data Science, Analytics, and Engineering. 
+You can find some of my work and projects on this website.
 
-## Features
+## Skills
 
-- Responsive
-- Semantic HTML
-- Skins
-- Highlight Theme
-- Internationalization
-- Search
-- Table of contents
-- Authors
-- Additional styles (alert, tag, image, icon, button, grid, etc)
-- Extensions (audios, videos, slides, demos)
-- Markdown enhancements ([MathJax](https://www.mathjax.org/), [mermaid](https://mermaidjs.github.io/), [chartjs](http://www.chartjs.org/))
-- Sharing ([AddToAny](https://www.addtoany.com/), [AddThis](https://www.addthis.com/))
-- Comments ([Disqus](https://disqus.com/), [Gitalk](https://gitalk.github.io/), [Valine](https://valine.js.org/en/))
-- Pageview ([LeanCloud](https://leancloud.cn/))
-- Analytics ([Google Analytics](https://analytics.google.com/analytics/web/))
-- RSS ([jekyll-feed](https://github.com/jekyll/jekyll-feed))
+- Programming      - Python, R, SQL
+- Machine Learning - Regression, Classification, Time Series
+- Deep Learning    - PyTorch, Natural Language Processing
+- Reporting        - Excel, Tableau, Looker Studio
+- Engineering      - Git, CI/CD, Docker, Terraform
+- Cloud            - Google Cloud Platform
+- Miscellaneous    - Adobe Photoshop, Adobe Premiere Pro
 
-## Skins
+## About Me
 
-TeXt has 6 built-in skins, you can also set up your own skin.
+My name is Farooq and I am a Problem Solver 👨‍🔧
+I love to solve problems that help others, or create a positive impact. If I dont have a problem to solve, I find one 😄
+I studied Mechanical Engineering 🛠 where I built my strong mathematics, and logical reasoning foundation. Later I worked for Accenture where I found my new interest in Data Science and Analytics 📊
+So, I signed up for a degree in Data Science at UTD 🏫 
+Right now, I am looking for a job in the Data Science, Analytics, and Engineering fields.
 
-| `default` | `dark` | `forest` |
-| --- |  --- | --- |
-| ![Default](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_default.jpg) | ![Dark](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_dark.jpg) | ![Forest](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_forest.jpg) |
+You can contact me at - farooqatwork@gmail.com
 
-| `ocean` | `chocolate` | `orange` |
-| --- |  --- | --- |
-| ![Ocean](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_ocean.jpg) | ![Chocolate](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_chocolate.jpg) | ![Orange](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_orange.jpg) |
+## Some Links
 
-### Highlight Theme
+[Resume](https://drive.google.com/file/d/13eRoi-EZHm16iUl2Bz4h_Cv2dflz2nyu/view?usp=share_link)
+[LinkedIn](https:/www.linkedin.com/in/sk-farooq/) 
+[GitHub](https://github.com/nimblefox)
 
-TeXt use [Tomorrow](https://github.com/chriskempson/tomorrow-theme) as the highlight theme.
-
-| `tomorrow` | `tomorrow-night` | `tomorrow-night-eighties` | `tomorrow-night-blue` | `tomorrow-night-bright` |
-| --- |  --- | --- | --- |  --- |
-| ![Tomorrow](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow.png) | ![Tomorrow Night](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night.png) | ![Tomorrow Night Eighties](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-eighties.png) | ![Tomorrow Night Blue](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-blue.png) | ![Tomorrow Night Bright](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-bright.png) |
