@@ -15,7 +15,7 @@ The test was remote and proctored so I cleared up my room and had my passport fo
 
 [Certification](https://www.credential.net/0a34a5ae-bbd1-46e1-9774-c46fb9b383a5?key=da08452abc44705f71c2bba4a1ecd4109e641a563866caea7f82a07debd5504c) 
 
-(https://github.com/nimblefox/nimblefox.github.io/blob/master/assets/gcp_ace.png)
+![GCP ACE](https://github.com/nimblefox/nimblefox.github.io/blob/master/assets/gcp_ace.png)
 
 The new knowledge of various services did not go in vain as I was able to put a lot of it to work in my Fall internship ! 
 <!--more-->
