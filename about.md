@@ -30,8 +30,11 @@ Hello, welcome to my website!
 
 My name is Farooq, I am a Master's student at The University of Texas at Dallas.
 
-I love solving problems involved in Data Science, Analytics, and Engineering.
-You can find some of my work and projects on this website.
+I love working with problems involved in Data Science, Analytics, and Engineering 📊 \
+I love to solve problems that help others, or create a positive impact. If I dont have a problem to solve, I find one 😄 \
+
+You can contact me at - [farooqatwork@gmail.com](mailto:farooqatwork@gmail.com)
+
 
 ## Skills
 
@@ -42,16 +45,6 @@ You can find some of my work and projects on this website.
 - Engineering      - Git, CI/CD, Docker, Terraform
 - Cloud            - Google Cloud Platform
 - Miscellaneous    - Adobe Photoshop, Adobe Premiere Pro
-
-## About Me
-
-My name is Farooq, a Problem Solver 👨‍🔧 I love to solve problems that help others, or create a positive impact. \
-If I dont have a problem to solve, I find one 😄 \
-I studied Mechanical Engineering 🛠 where I built my strong mathematics, and logical reasoning foundation. Later I worked for Accenture where I found my new interest in Data Science and Analytics 📊
-So, I signed up for a degree in Data Science at UTD 🏫 \
-Right now, I am looking for a job in the Data Science, Analytics, and Engineering fields.
-
-You can contact me at - [farooqatwork@gmail.com](mailto:farooqatwork@gmail.com)
 
 ## Some Links
 
