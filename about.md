@@ -31,7 +31,7 @@ Hello, welcome to my website!
 My name is Farooq, I am a Master's student at The University of Texas at Dallas.
 
 I love working with problems involved in Data Science, Analytics, and Engineering 📊 \
-I love to solve problems that help others, or create a positive impact. If I dont have a problem to solve, I find one 😄 \
+I derive happiness from solving problems that helpi others, or create a positive impact 😄
 
 You can contact me at - [farooqatwork@gmail.com](mailto:farooqatwork@gmail.com)
 
