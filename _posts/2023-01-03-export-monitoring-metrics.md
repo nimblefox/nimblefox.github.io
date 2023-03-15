@@ -141,13 +141,13 @@ Once you all that setup, the cloud run job should run as per your scheduler and 
 ![Cloudrun][img_1]
 ![BigQuery][img_2]
 
+[img_0]:/assets/container.png
+[img_1]:/assets/Cloudrunjob.png
+[img_2]:/assets/bigquery.png
+
 
 <!--more-->
 
 ---
 
 You can find all the code here --> [GCP-Monitoring-Metrics](https://github.com/nimblefox/GCP-Monitoring-Metrics)
-
-[img_0]:/assets/container.png
-[img_1]:/assets/Cloudrunjob.png
-[img_2]:/assets/bigquery.png
