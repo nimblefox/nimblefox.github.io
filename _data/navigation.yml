@@ -50,3 +50,11 @@ header:
       tr      : &TR       Arşivdekiler
       # @end locale config
     url: /archive.html
+
+  - titles:
+      en      : &EN       CV
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+    url: /CV.html

@@ -29,7 +29,7 @@ key: page-about
 Hello, welcome to my website!
 
 ![My photo]:[img_0]
-[img_0]:
+[img_0]:/assets/Farooq.png
 
 My name is Farooq, I am a Master's student at The University of Texas at Dallas.
 

@@ -128,7 +128,7 @@ docker push gcr.io/<project_id>/collector:latest
 
 and with that I had the container created in GCR
 
-![Container](../assets/posts/container.png)
+![Container][img_0]
 
 Next step is to create the cloud run job which was very straight forward, once created I had to setup a schedule under "TRIGGERS" tab, it enables a cloud scheduler instance to send HTTP requests to cloud run job, you would need a service account which has these permissions : Cloud Run Invoker ; Monitoring Viewer ; and a permission to enable write access to Big Query table
 
@@ -138,8 +138,8 @@ https://cloud.google.com/run/docs/execute/jobs-on-schedule
 
 Once you all that setup, the cloud run job should run as per your scheduler and write data to Big Query
 
-![Cloudrun](../assets/posts/Cloudrunjob.png)
-![BigQuery](../assets/posts/bigquery.png)
+![Cloudrun][img_1]
+![BigQuery][img_2]
 
 
 <!--more-->
@@ -147,3 +147,7 @@ Once you all that setup, the cloud run job should run as per your scheduler and 
 ---
 
 You can find all the code here --> [GCP-Monitoring-Metrics](https://github.com/nimblefox/GCP-Monitoring-Metrics)
+
+[img_0]:/assets/container.png
+[img_1]:/assets/Cloudrunjob.png
+[img_2]:/assets/bigquery.png
