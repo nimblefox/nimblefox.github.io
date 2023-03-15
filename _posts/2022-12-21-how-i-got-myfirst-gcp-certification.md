@@ -1,6 +1,12 @@
 ---
 title: How I got my first Google Cloud Certificate ☁️
 tags: GCP
+mode: immersive
+aside:
+  toc: true
+  selectors: 'h3'
+cover: "/assets/images/badge.png"
+show_edit_on_github: false
 ---
 
 When I started my Master's Degree one of the things I wanted to do was learn AWS and get certified, so that I could land a good internship.
