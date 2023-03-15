@@ -5,8 +5,16 @@ mode: immersive
 aside:
   toc: true
   selectors: 'h3'
+key: 20210315
+author: Farooq
 cover: "/assets/images/badge.png"
 show_edit_on_github: false
+header: true
+article_header:
+  type: cover
+  image:
+    gradient: linear-gradient(135deg, rgba(255, 69, 0, .5), rgba(255, 100, 0, .2))
+    src: "assets/zakaria-ahada-VGR_ReUCqNw-unsplash.jpg"
 ---
 
 When I started my Master's Degree one of the things I wanted to do was learn AWS and get certified, so that I could land a good internship.
