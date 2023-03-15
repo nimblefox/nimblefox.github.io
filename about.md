@@ -26,8 +26,6 @@ titles:
 key: page-about
 ---
 
-![farooq](/assets/images/Farooq.png)
-
 Hello, welcome to my website!
 
 My name is Farooq, I am a Master's student at The University of Texas at Dallas.
