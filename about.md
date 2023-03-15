@@ -28,8 +28,6 @@ key: page-about
 
 Hello, welcome to my website!
 
-![Me](/assets/images/Farooq.png){:width="128px" height="128px"}
-
 My name is Farooq, I am a Master's student at The University of Texas at Dallas.
 
 I am happy when I solve problems that help others, or create a positive impact 😄 \
