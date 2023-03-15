@@ -17,7 +17,7 @@ The test was remote and proctored so I cleared up my room and had my passport fo
 
 ![GCP ACE][img_0]
 
-[img_0]:/assets/gcp_ace.png
+[img_0]:/assets/images/gcp_ace.png
 
 The new knowledge of various services did not go in vain as I was able to put a lot of it to work in my Fall internship ! 
 <!--more-->
