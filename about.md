@@ -28,9 +28,6 @@ key: page-about
 
 Hello, welcome to my website!
 
-![My photo]:[img_0]
-[img_0]:/assets/Farooq.png
-
 My name is Farooq, I am a Master's student at The University of Texas at Dallas.
 
 I am happy when I solve problems that help others, or create a positive impact 😄 \
@@ -45,3 +42,5 @@ You can contact me at - [farooqatwork@gmail.com](mailto:farooqatwork@gmail.com)
 - [LinkedIn](www.linkedin.com/in/sk-farooq/) 
 - [GitHub](https://github.com/nimblefox)
 
+![GCP ACE][img_0]
+[img_0]:/assets/gcp_ace.png
