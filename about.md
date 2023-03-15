@@ -30,21 +30,11 @@ Hello, welcome to my website!
 
 My name is Farooq, I am a Master's student at The University of Texas at Dallas.
 
-I love working with problems involved in Data Science, Analytics, and Engineering 📊 \
-I derive happiness from solving problems that helpi others, or create a positive impact 😄
+I am happy when I solve problems that help others, or create a positive impact 😄 \
+I love working with problems involved in Data Science, Analytics, and Engineering 📊
 
 You can contact me at - [farooqatwork@gmail.com](mailto:farooqatwork@gmail.com)
 
-
-## Skills
-
-- Programming      - Python, R, SQL
-- Machine Learning - Regression, Classification, Time Series
-- Deep Learning    - PyTorch, Natural Language Processing
-- Reporting        - Excel, Tableau, Looker Studio
-- Engineering      - Git, CI/CD, Docker, Terraform
-- Cloud            - Google Cloud Platform
-- Miscellaneous    - Adobe Photoshop, Adobe Premiere Pro
 
 ## Some Links
 
