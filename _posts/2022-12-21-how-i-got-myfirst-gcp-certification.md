@@ -1,7 +1,6 @@
 ---
-title: How I got my first Google Cloud Certificate ☁️
+title: How I got my first Google Cloud Certificate
 tags: GCP
-mode: immersive
 aside:
   toc: true
   selectors: 'h3'
