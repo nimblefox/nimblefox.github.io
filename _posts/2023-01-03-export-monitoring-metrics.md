@@ -141,9 +141,9 @@ Once you all that setup, the cloud run job should run as per your scheduler and 
 ![Cloudrun][img_1]
 ![BigQuery][img_2]
 
-[img_0]:/assets/container.png
-[img_1]:/assets/Cloudrunjob.png
-[img_2]:/assets/bigquery.png
+[img_0]:/assets/images/container.png
+[img_1]:/assets/images/Cloudrunjob.png
+[img_2]:/assets/images/bigquery.png
 
 
 <!--more-->
