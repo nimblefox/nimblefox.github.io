@@ -34,14 +34,6 @@ header:
     url: /resume.html
 
   - titles:
-      en      : &EN       Portfolio
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-    url: /portfolio.html
-
-  - titles:
       # @start locale config
       en      : &EN       Archive
       en-GB   : *EN

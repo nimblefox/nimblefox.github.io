@@ -21,6 +21,20 @@ aside:
   </div>
 </div>
 
+## Education
+<div class="resume-section-content">
+    {% for edu in site.data.resume.education %}
+    <div class="resume-block">
+      <div class="resume-block-title">
+        <i class="fas fa-university"></i> {{ edu.university }}, {{ edu.location }}
+      </div>
+      <div class="resume-block-subtitle">
+        <i class="far fa-calendar-alt"></i> {{ edu.duration }} | <i class="fas fa-user-graduate"></i> {{ edu.major }}
+      </div>
+    </div>
+    {% endfor %}
+</div>
+
 ## Work Experience
 <div class="resume-section-content">
   {% for exp in site.data.resume.experience %}
@@ -40,21 +54,6 @@ aside:
   {% endfor %}
   </div>
 
-
-## Education
-<div class="resume-section-content">
-    {% for edu in site.data.resume.education %}
-    <div class="resume-block">
-      <div class="resume-block-title">
-        <i class="fas fa-university"></i> {{ edu.university }}, {{ edu.location }}
-      </div>
-      <div class="resume-block-subtitle">
-        <i class="far fa-calendar-alt"></i> {{ edu.duration }} | <i class="fas fa-user-graduate"></i> {{ edu.major }}
-      </div>
-    </div>
-    {% endfor %}
-</div>
-
 ## Skills
 <div class="resume-section-content">
   {% for skill in site.data.resume.skills %}
@@ -69,23 +68,14 @@ aside:
   {% endfor %}
   </div>
 
-## Awards
+## Projects
 <div class="resume-section-content">
-  {% for award in site.data.resume.awards %}
-    <div class="paper-block-title">
-      <i class="fa fa-trophy"></i> {{ award }}
-    </div>
-  {% endfor %}
-  </div>
-
-## Publications
-<div class="resume-section-content">
-  {% for paper in site.data.resume.papers %}
+  {% for paper in site.data.resume.projects %}
     <div class="paper-block-title">
       <i class="fas fa-book"></i> {{ paper.title }}, <a href="{{paper.link}}">{{ paper.journal }}</a>
     </div>
     <div class="paper-block-subtitle">
-        {{paper.authors | join: ", " }}
+        {{paper.tech | join: ", " }}
     </div>
   {% endfor %}
 </div>
