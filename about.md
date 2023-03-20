@@ -30,14 +30,11 @@ Hello, welcome to my website!
 
 My name is Farooq, I am a Master's student at The University of Texas at Dallas.
 
-I am happy when I solve problems that help others, or create a positive impact 😄 \
-I love working with problems involved in Data Science, Analytics, and Engineering 📊
+I am happy when I solve problems that help others or create a positive impact 😄 \
+My forte is working on problems involved in Data Science, Analytics, and Engineering 📊
 
-You can contact me at - [farooqatwork@gmail.com](mailto:farooqatwork@gmail.com)
+You can find my projects and thoughts on this site.
 
+Feel free to contact me at - [farooqatwork@gmail.com](mailto:farooqatwork@gmail.com)
 
-## Some Links
-
-- [Resume](https://drive.google.com/file/d/13eRoi-EZHm16iUl2Bz4h_Cv2dflz2nyu/view?usp=share_link)
-- [LinkedIn](www.linkedin.com/in/sk-farooq/) 
-- [GitHub](https://github.com/nimblefox)
+Find more links at the footer of this page.

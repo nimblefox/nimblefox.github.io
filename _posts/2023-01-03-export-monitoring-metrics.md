@@ -1,10 +1,16 @@
 ---
 title: Collecting GCP Monitoring Metrics 
 tags: GCP Docker Terraform Python
+aside:
+  toc: true
+  selectors: 'h3'
+author: Farooq
+cover: "/assets/images/badge.png"
+show_edit_on_github: false
 ---
 
-If you have you ever used the metrics explorer in the GCP Monitoring service, it displays the metric data for various GCP project services like storage, pubsub, VM etc.
-I needed this data on one of my dashboards during an internship. I thought there would be an easy way to export it, but boy was I wrong.
+Google Cloud Platform allows you too visualize data on resource usage through the monitoring page. But this data is not accessible in raw format. During my internship, I needed this data on one of my dashboards. I thought there would be an easy way to export it, but boy was I wrong.
+
 A senior pointed me to this resource -> [Reading metric data](https://cloud.google.com/monitoring/custom-metrics/reading-metrics) so I figured that the only way to collect metric data is by requesting the Monitoring API.
 
 So I came up with a python script that does it (simplified) : 
@@ -88,7 +94,7 @@ if __name__ == '__main__':
 ```
 
 If you notice its just 2 functions `fetch_metric()` to request the metric data from monitoring API, and `load_metric()` to load the response to a Big Query table.
-Now to put this script on a schedule I need 2 things, a scheduler and some compute that scales to zero when not in use.
+Now to put this script on a daily schedule I need 2 things, a scheduler and some compute that scales to zero when not in use.
 Cloud Run Job was the perfect service for this use case.
 
 To use cloud run I need a container, so I created a python image and had the following commands in my docker file
@@ -141,9 +147,15 @@ Once you all that setup, the cloud run job should run as per your scheduler and 
 ![Cloudrun][img_1]
 ![BigQuery][img_2]
 
+
+Here is how the final architecture looked like :
+
+![architecture][img_3]
+
 [img_0]:/assets/images/container.png
 [img_1]:/assets/images/Cloudrunjob.png
 [img_2]:/assets/images/bigquery.png
+[img_3]:/assets/images/GCP_Architecture.png 
 
 
 <!--more-->
