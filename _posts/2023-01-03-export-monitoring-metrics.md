@@ -5,7 +5,7 @@ aside:
   toc: true
   selectors: 'h3'
 author: Farooq
-cover: "/assets/images/badge.png"
+cover: "/assets/images/metrics.png"
 show_edit_on_github: false
 ---
 
