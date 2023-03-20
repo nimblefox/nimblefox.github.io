@@ -14,8 +14,7 @@ aside:
       <a href="_target_"><i class="fa fa-briefcase"></i></a> {{site.data.resume.jobtitle}} | 
       <a href="{{site.data.resume.linkedin}}"><i class="fab fa-linkedin-in"></i></a> | 
       <a href="{{site.data.resume.link}}"><i class="fas fa-globe"></i></a> | 
-      <a href="{{site.data.resume.github}}"><i class="fab fa-github"></i></a> | 
-      <a href="{{site.data.resume.scholar}}"><i class="fas fa-flask"></i></a> |
+      <a href="{{site.data.resume.github}}"><i class="fab fa-github"></i></a> |
       <a><i class="fas fa-map-marker-alt"></i></a> {{site.data.resume.place}}
       </div>
   </div>
