@@ -9,22 +9,26 @@ cover: "/assets/images/trucks.png"
 show_edit_on_github: false
 ---
 
-During my Master's at UTD I enrolled in a Big Data course by a great professor, Rami El-Youssef. I enjoyed his lectures a lot and took detailed notes every class. I did his assignments every week which gave me practical knowledge. But I wanted to put all these learnings together with a project. So the professor came up with a truck telematics dataset and asked me to come up with some business questions myself.
+When I had was taking a Big Data course under Professor Rami El-Youssef at the University of Texas at Dallas. I learned a lot about HDFS, Hive, Impala, and Spark, which are essential tools for big data processing. With prof's assignments I was able to get hands on experience in each topic. However, I wanted to put all these learnings together with a project.
 
-After looking at the data I was able to understand that there is data related to 3 entities trucks, drivers, and violations. 
+So the professor provided me with a truck telematics dataset which was essentially 3 csv files and asked me to come up with some business problems and solve them. The data was related to three entities: trucks, drivers, and traffic violations.
+After a lot of brainstorming, I was able to formulate three business requirements:
 
-After a lot of thinking I came up with 3 business requirements.
+1. Fleet Performance Dashboard: A dynamic dashboard that provides a holistic view of fleet performance by tracking key metrics such as the number of trucks in the fleet, truck make, and fuel economy (MPG). This dashboard would enable fleet managers to quickly identify areas of concern and take proactive measures to optimize performance.
 
-1. A Dashboard to look at generic metrics like - Number of trucks in fleet, count by truck make, MPG
-2. A Dashboard to identify risky drivers based on violations, and at which location they have occured
-3. An Analysis to identify which truck models had the best MPG ratings among the fleet.
+2. Driver Risk Analysis: An interactive dashboard that uses violation data to identify risky drivers and their violation hotspots. The dashboard would enable fleet managers to take corrective measures such as training or coaching to reduce the frequency of violations and improve driver safety.
 
-Now to build a database to fulfill these requirements I needed to perform some tranformations and build new tables. So I came up with something which looked like this to make my mental model clear. This is not a ERD diagram.
+3. Fuel Efficiency Analysis: A statistical analysis to identify the truck models that had the best fuel economy (MPG) ratings among the fleet. This analysis would enable fleet managers to identify the most fuel-efficient truck models and make informed decisions when expanding or upgrading their fleet.
 
+For this, I had to perform some transformations and build new tables to store the transformed data.
+As I worked on this task, I realized the importance of having a clear mental model of the table structure. To ensure that I could keep track of the data flow and transformations, I came up with a visual representation of the table structure. While this was not an ERD diagram, it helped me organize my thoughts and build the necessary tables.
+
+![tables][img_0]
 
 Once I had these transformations on paper I went ahead and created them using SQL DDL statements with HiveQL and Impala. This is a sample DDL statement
 
 ```sql
+-- create table
 CREATE TABLE geolocation
 (
 truckid string,
@@ -35,8 +39,8 @@ longitude DOUBLE,
 city string,
 state string,
 velocity BIGINT,
-event_ind BIGINT,
-idling_ind BIGINT
+event_ind BINARY,
+idling_ind BINARY
 )
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
@@ -44,21 +48,57 @@ STORED AS TEXTFILE
 TBLPROPERTIES (”skip.header.|ine.count"="l");
 ```
 
-Later I had to do load the data from file or by calculations and do some sanity checks to make sure that all the data was inplace like needed.
+Later I had to load the data from the csv files, and do some sanity checks to make sure that all the data was inplace like needed.
 
-The next step was to solve the business requirements
+```sql
+-- load data
+LOAD DATA INPATH '/user/hive/warehouse/project/geolocation.csv'
+INTO TABLE geolocatlon;
+INVALIDATE METADATA
+-- sanity check
+SELECT COUNT(*) FROM geolocation;
+```
 
-First I needed to connect to Tableau to make the dashboard and for that I need a JDBC driver which i doenalodd from so and so and IP addrss of my Hadoop server to coonect to. Once connected I created my charts and create dthe dashbord
+The next step was to use BI and Data analytics to solve the business problems and gain meaningful insights from the data. 
 
-Later I connected hadoop to R using so and so and from trucks_mg data I imported 2 columsna and applied Tukey HSD to find out this and concluded that 
+The first step was to create a dynamic dashboard in Tableau that would provide a comprehensive view of fleet performance metrics. To do this, I needed to connect to Tableau via an ODBC driver for Impala which I downloaded from the internet. Then I opened Tableau and used Cloudera Hadoop connector to connect to my Hadoop server.I got the server ip using `ifconfig` command, I was able to create the charts and build the dashboard, providing valuable insights into fleet performance.
 
-In a perfect world I would not conduct some hypoethesis tests and check for randomization but I assumed all this data was random and conducted 3 way ANOVA
+These were the 2 dashboards:
+
+![T1][img_4]
+
+![T2][img_5]
 
 
+Next, I connected the Hive server with RStudio with help from this [post](https://pygot.wordpress.com/2016/10/13/connecting-r-studio-to-hadoop-via-hive/) I imported the `trucks_mg` table and filtered for the top 3 most owned trucks by make, which were - Ford, Caterpillar, Peterbilt. These were the mean mpg's for each truck make.
+
+![R1][img_1]
+
+Then, I applied ANOVA on columns `model` and `mpg` to determine if the difference in ther mean mpg's ratings was statistically significant, I had about 2900+ datapoints for this analysis. While I would typically conduct multiple hypothesis tests to check for randomization, I assumed that the data was random and was not dependent on driver personality or any other features for brevity.
+
+![R2][img_2]
+
+Based on the p-value, I rejected the null hypothesis that all the MPG means are equal, thus we conclude that at least two models have significantly different MPG ratings.
+
+I then applied Tukey HSD test to identify any significant differences between every 2 groups. 
+
+![R3][img_3]
+
+when I looked at p-values to compare each pair, these were the conclusions :
+- Ford v/s Caterpillar:-  There is no significant difference between their MPG
+- Peterbilt v/s Caterpillar:- There is no significant difference at 99% Significance level. However, at 95% Confidence Interval there is significant difference between these models.
+- Peterbilt v/s Ford:- There is significant difference between Peterbilt and Ford at 99.9% level.
+ 
+Thus, by leveraging these powerful data analytics tools and techniques, I was able to convert 3 csv files to valuable insights that would enable fleet managers to make data-driven decisions and optimize fleet performance. Data really is the new oil!
 
 
-
+[img_0]:/assets/images/tables.png
+[img_1]:/assets/images/1.png
+[img_2]:/assets/images/2.png
+[img_3]:/assets/images/3.png
+[img_4]:/assets/images/T1.png
+[img_5]:/assets/images/T2.png
 
 ---
 
-You can find more details on this repository --> [Data Analysis in Hadoop]()
+You can find more details on this repository --> [Data Analysis in Hadoop](https://github.com/nimblefox/Big-Data-Analysis)
