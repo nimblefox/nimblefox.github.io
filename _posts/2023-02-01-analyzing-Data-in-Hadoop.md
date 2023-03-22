@@ -5,7 +5,7 @@ aside:
   toc: true
   selectors: 'h3'
 author: Farooq
-cover: "/assets/images/hadoop.png"
+cover: "/assets/images/trucks.png"
 show_edit_on_github: false
 ---
 
