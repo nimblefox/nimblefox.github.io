@@ -9,7 +9,7 @@ cover: "/assets/images/trucks.png"
 show_edit_on_github: false
 ---
 
-When I had was taking a Big Data course under Professor Rami El-Youssef at the University of Texas at Dallas. I learned a lot about HDFS, Hive, Impala, and Spark, which are essential tools for big data processing. With prof's assignments I was able to get hands on experience in each topic. However, I wanted to put all these learnings together with a project.
+When I was taking a Big Data course under Professor [Rami El-Youssef](https://www.linkedin.com/in/dr-rami-el-youssef-3276713b/) at the University of Texas at Dallas. I learned a lot about HDFS, Hive, Impala, and Spark, which are essential tools for big data processing. With prof's assignments I was able to get hands on experience in each topic. However, I wanted to put all these learnings together with a project.
 
 So the professor provided me with a truck telematics dataset which was essentially 3 csv files and asked me to come up with some business problems and solve them. The data was related to three entities: trucks, drivers, and traffic violations.
 After a lot of brainstorming, I was able to formulate three business requirements:
