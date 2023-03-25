@@ -74,7 +74,7 @@ Next, I connected the Hive server with RStudio with help from this [post](https:
 
 ![R1][img_1]
 
-Then, I applied ANOVA on columns `model` and `mpg` to determine if the difference in ther mean mpg's ratings was statistically significant, I had about 2900+ datapoints for this analysis. While I would typically conduct multiple hypothesis tests to check for randomization, I assumed that the data was random and was not dependent on driver personality or any other features for brevity.
+Now the idea is to check if the difference between the mean mpg's of these 3 truck makes is statistically significant or if it is by chance. To do this I applied [ANOVA](http://www.sthda.com/english/wiki/one-way-anova-test-in-r#what-is-one-way-anova-test) on columns `model` and `mpg`. For this test to be valid the `mpg` values should solely depend on truck engine performance and not any other factors like driver behaviour, fuel quality. Since there is not enough information to check for randomization, I assumed it is for time being.
 
 ![R2][img_2]
 
